@@ -1,0 +1,584 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Conditions - Flight Deck Doctor</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #005eb8;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    nav {
+      background-color: #003f7d;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .category-card {
+      background: white;
+      border: 2px solid transparent;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .category-card:hover {
+      transform: translateY(-5px);
+      border-color: #005eb8;
+    }
+
+    .category-card a {
+      text-decoration: none;
+      color: #005eb8;
+      font-weight: bold;
+    }
+
+    .section {
+      background: white;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .section h2 {
+      color: #005eb8;
+    }
+
+    .section h3 {
+      margin-top: 20px;
+      color: #003f7d;
+    }
+
+    .section p {
+      line-height: 1.6;
+    }
+
+    .condition {
+      background: #f9fbfd;
+      padding: 20px;
+      margin-top: 20px;
+      border-left: 4px solid #005eb8;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #003f7d;
+      color: white;
+      font-size: 12px;
+    }
+
+    footer p {
+      font-size: 11px;
+      opacity: 0.85;
+    }
+
+    .dev-banner {
+      background-color: #ffcc00;
+      color: #333;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 14px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  Flight Deck Doctor
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="conditions.html">Conditions</a>
+  <a href="medications.html">Medications</a>
+  <a href="categories.html">Medical Categories</a>
+  <a href="resources.html">Tools and Resources</a>
+  <a href="stories.html">Pilot Stories</a>
+  <a href="faq.html">FAQ</a>
+</nav>
+
+<div class="dev-banner">
+  ⚠️ This site is in early development. Content is expanding — always consult a CAME for official guidance.
+</div>
+
+<div class="container">
+
+  <h1>Medical Conditions</h1>
+
+  <div class="section">
+    <h2>Important Notice</h2>
+    <p>
+      This page provides general guidance only. Aviation medical decisions are made on a case-by-case basis by Transport Canada and a CAME.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>How Medical Conditions Are Assessed</h2>
+    <p>
+      Transport Canada does not automatically disqualify applicants based on a diagnosis. Instead, decisions are based on risk of incapacitation, stability of the condition, and supporting medical evidence.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Browse Conditions</h2>
+    <div class="category-grid">
+      <div class="category-card"><a href="#cardio">Cardiovascular</a></div>
+      <div class="category-card"><a href="#mental">Mental Health</a></div>
+      <div class="category-card"><a href="#neuro">Neurological</a></div>
+      <div class="category-card"><a href="#vision">Vision</a></div>
+      <div class="category-card"><a href="#metabolic">Metabolic</a></div>
+    </div>
+  </div>
+
+  <!-- CARDIO -->
+  <div id="cardio" class="section">
+    <h2>Cardiovascular Conditions</h2>
+    <p>Conditions related to the heart and blood vessels.</p>
+
+    <div class="condition">
+      <h3>High Blood Pressure (Hypertension)</h3>
+
+      <h4>Overview</h4>
+      <p>High blood pressure is a common condition where the force of blood against the artery walls is elevated.</p>
+
+      <h4>Can You Fly?</h4>
+      <p>Pilots may be certified if blood pressure is stable and well-controlled.</p>
+
+      <h4>What Transport Canada Looks At</h4>
+      <ul>
+        <li>Blood pressure readings over time</li>
+        <li>Medication use and side effects</li>
+        <li>Risk of cardiovascular complications</li>
+      </ul>
+
+      <h4>Possible Requirements</h4>
+      <ul>
+        <li>Regular blood pressure monitoring</li>
+        <li>Physician reports</li>
+        <li>Possible ECG testing</li>
+      </ul>
+
+      <h4>Pilot Tips</h4>
+      <p>Lifestyle changes such as diet, exercise, and stress management can improve outcomes and simplify medical approval.</p>
+    </div>
+  </div>
+
+  <!-- METABOLIC -->
+  <div id="metabolic" class="section">
+    <h2>Metabolic Conditions</h2>
+    <p>Conditions affecting metabolism and blood chemistry.</p>
+
+    <div class="condition">
+      <h3>Diabetes</h3>
+
+      <h4>Overview</h4>
+      <p>Diabetes is a condition affecting blood sugar regulation, ranging from mild to insulin-dependent forms.</p>
+
+      <h4>Can You Fly?</h4>
+      <p>Pilots may be certified if the condition is stable and well-controlled.</p>
+
+      <h4>What Transport Canada Looks At</h4>
+      <ul>
+        <li>Stability of blood sugar levels</li>
+        <li>Risk of hypoglycemia</li>
+        <li>Presence of complications</li>
+        <li>Consistency of monitoring</li>
+      </ul>
+
+      <h4>Possible Requirements</h4>
+      <ul>
+        <li>Blood test results (e.g. A1c)</li>
+        <li>Glucose monitoring records</li>
+        <li>Specialist reports</li>
+        <li>Regular follow-ups</li>
+      </ul>
+
+      <h4>Pilot Reality</h4>
+      <p>Expect additional documentation and ongoing monitoring. Approval is often possible with consistent management.</p>
+    </div>
+  </div>
+
+  <!-- MENTAL HEALTH -->
+  <div id="mental" class="section">
+    <h2>Mental Health Conditions</h2>
+    <p>Conditions affecting mood, behavior, and cognitive function.</p>
+
+    <div class="condition">
+      <h3>Attention Deficit Hyperactivity Disorder (ADHD)</h3>
+
+      <h4>Overview</h4>
+      <p>ADHD affects attention, focus, and impulse control. It may be managed with lifestyle strategies or medication.</p>
+
+      <h4>Can You Fly?</h4>
+      <p>Active ADHD or current use of ADHD medication is generally disqualifying. Eligibility may exist if off medication and symptom-free for 6+ months.</p>
+
+      <h4>What Transport Canada Looks At</h4>
+      <ul>
+        <li>Current diagnostic status and symptom history</li>
+        <li>Medication use (stimulants or non-stimulants)</li>
+        <li>Neuropsychological testing confirming stability</li>
+        <li>Risk of attention lapses impacting flight safety</li>
+      </ul>
+
+      <h4>Possible Requirements</h4>
+      <ul>
+        <li>Detailed medical and psychiatric history</li>
+        <li>Specialist or neuropsychological reports</li>
+        <li>Evidence of sustained symptom control without medication</li>
+        <li>Ongoing monitoring if cleared</li>
+      </ul>
+
+      <h4>Pilot Tips</h4>
+      <p>Maintain thorough documentation and consult a CAME early. Early disclosure improves likelihood of certification.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p style="max-width: 800px; margin: auto; margin-bottom: 10px;">
+    Medical information on this site is for general guidance only. Requirements may change and individual cases vary. Always consult a Transport Canada Civil Aviation Medical Examiner (CAME) for official advice.
+  </p>
+
+  © 2026 Flight Deck Doctor
+</footer>
+
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Conditions - Flight Deck Doctor</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #005eb8;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    nav {
+      background-color: #003f7d;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .category-card {
+      background: white;
+      border: 2px solid transparent;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .category-card:hover {
+      transform: translateY(-5px);
+      border-color: #005eb8;
+    }
+
+    .category-card a {
+      text-decoration: none;
+      color: #005eb8;
+      font-weight: bold;
+    }
+
+    .section {
+      background: white;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .section h2 {
+      color: #005eb8;
+    }
+
+    .section h3 {
+      margin-top: 20px;
+      color: #003f7d;
+    }
+
+    .section p {
+      line-height: 1.6;
+    }
+
+    .condition {
+      background: #f9fbfd;
+      padding: 20px;
+      margin-top: 20px;
+      border-left: 4px solid #005eb8;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #003f7d;
+      color: white;
+      font-size: 12px;
+    }
+
+    footer p {
+      font-size: 11px;
+      opacity: 0.85;
+    }
+
+    .dev-banner {
+      background-color: #ffcc00;
+      color: #333;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 14px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  Flight Deck Doctor
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="conditions.html">Conditions</a>
+  <a href="medications.html">Medications</a>
+  <a href="categories.html">Medical Categories</a>
+  <a href="resources.html">Tools and Resources</a>
+  <a href="stories.html">Pilot Stories</a>
+  <a href="faq.html">FAQ</a>
+</nav>
+
+<div class="dev-banner">
+  ⚠️ This site is in early development. Content is expanding — always consult a CAME for official guidance.
+</div>
+
+<div class="container">
+
+  <h1>Medical Conditions</h1>
+
+  <div class="section">
+    <h2>Important Notice</h2>
+    <p>
+      This page provides general guidance only. Aviation medical decisions are made on a case-by-case basis by Transport Canada and a CAME.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>How Medical Conditions Are Assessed</h2>
+    <p>
+      Transport Canada does not automatically disqualify applicants based on a diagnosis. Instead, decisions are based on risk of incapacitation, stability of the condition, and supporting medical evidence.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Browse Conditions</h2>
+    <div class="category-grid">
+      <div class="category-card"><a href="#cardio">Cardiovascular</a></div>
+      <div class="category-card"><a href="#mental">Mental Health</a></div>
+      <div class="category-card"><a href="#neuro">Neurological</a></div>
+      <div class="category-card"><a href="#vision">Vision</a></div>
+      <div class="category-card"><a href="#metabolic">Metabolic</a></div>
+    </div>
+  </div>
+
+  <!-- CARDIO -->
+  <div id="cardio" class="section">
+    <h2>Cardiovascular Conditions</h2>
+    <p>Conditions related to the heart and blood vessels.</p>
+
+    <div class="condition">
+      <h3>High Blood Pressure (Hypertension)</h3>
+
+      <h4>Overview</h4>
+      <p>High blood pressure is a common condition where the force of blood against the artery walls is elevated.</p>
+
+      <h4>Can You Fly?</h4>
+      <p>Pilots may be certified if blood pressure is stable and well-controlled.</p>
+
+      <h4>What Transport Canada Looks At</h4>
+      <ul>
+        <li>Blood pressure readings over time</li>
+        <li>Medication use and side effects</li>
+        <li>Risk of cardiovascular complications</li>
+      </ul>
+
+      <h4>Possible Requirements</h4>
+      <ul>
+        <li>Regular blood pressure monitoring</li>
+        <li>Physician reports</li>
+        <li>Possible ECG testing</li>
+      </ul>
+
+      <h4>Pilot Tips</h4>
+      <p>Lifestyle changes such as diet, exercise, and stress management can improve outcomes and simplify medical approval.</p>
+    </div>
+  </div>
+
+  <!-- METABOLIC -->
+  <div id="metabolic" class="section">
+    <h2>Metabolic Conditions</h2>
+    <p>Conditions affecting metabolism and blood chemistry.</p>
+
+    <div class="condition">
+      <h3>Diabetes</h3>
+
+      <h4>Overview</h4>
+      <p>Diabetes is a condition affecting blood sugar regulation, ranging from mild to insulin-dependent forms.</p>
+
+      <h4>Can You Fly?</h4>
+      <p>Pilots may be certified if the condition is stable and well-controlled.</p>
+
+      <h4>What Transport Canada Looks At</h4>
+      <ul>
+        <li>Stability of blood sugar levels</li>
+        <li>Risk of hypoglycemia</li>
+        <li>Presence of complications</li>
+        <li>Consistency of monitoring</li>
+      </ul>
+
+      <h4>Possible Requirements</h4>
+      <ul>
+        <li>Blood test results (e.g. A1c)</li>
+        <li>Glucose monitoring records</li>
+        <li>Specialist reports</li>
+        <li>Regular follow-ups</li>
+      </ul>
+
+      <h4>Pilot Reality</h4>
+      <p>Expect additional documentation and ongoing monitoring. Approval is often possible with consistent management.</p>
+    </div>
+  </div>
+
+  <!-- MENTAL HEALTH -->
+  <div id="mental" class="section">
+    <h2>Mental Health Conditions</h2>
+    <p>Conditions affecting mood, behavior, and cognitive function.</p>
+
+    <div class="condition">
+      <h3>Attention Deficit Hyperactivity Disorder (ADHD)</h3>
+
+      <h4>Overview</h4>
+      <p>ADHD affects attention, focus, and impulse control. It may be managed with lifestyle strategies or medication.</p>
+
+      <h4>Can You Fly?</h4>
+      <p>Active ADHD or current use of ADHD medication is generally disqualifying. Eligibility may exist if off medication and symptom-free for 6+ months.</p>
+
+      <h4>What Transport Canada Looks At</h4>
+      <ul>
+        <li>Current diagnostic status and symptom history</li>
+        <li>Medication use (stimulants or non-stimulants)</li>
+        <li>Neuropsychological testing confirming stability</li>
+        <li>Risk of attention lapses impacting flight safety</li>
+      </ul>
+
+      <h4>Possible Requirements</h4>
+      <ul>
+        <li>Detailed medical and psychiatric history</li>
+        <li>Specialist or neuropsychological reports</li>
+        <li>Evidence of sustained symptom control without medication</li>
+        <li>Ongoing monitoring if cleared</li>
+      </ul>
+
+      <h4>Pilot Tips</h4>
+      <p>Maintain thorough documentation and consult a CAME early. Early disclosure improves likelihood of certification.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p style="max-width: 800px; margin: auto; margin-bottom: 10px;">
+    Medical information on this site is for general guidance only. Requirements may change and individual cases vary. Always consult a Transport Canada Civil Aviation Medical Examiner (CAME) for official advice.
+  </p>
+
+  © 2026 Flight Deck Doctor
+</footer>
+
+</body>
+>>>>>>> 29305a89f9a4d3117d62cd4c3ff1d6ef781656e2
+</html>

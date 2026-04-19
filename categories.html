@@ -1,0 +1,764 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Categories - Flight Deck Doctor</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #005eb8;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    nav {
+      background-color: #003f7d;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* TOP CATEGORY SELECTOR */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .category-card {
+      background: white;
+      border: 2px solid transparent;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .category-card:hover {
+      transform: translateY(-5px);
+      border-color: #005eb8;
+    }
+
+    .category-card a {
+      text-decoration: none;
+      color: #005eb8;
+      font-weight: bold;
+    }
+
+    /* SECTION STYLING */
+    .section {
+      background: white;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .section h2 {
+      color: #005eb8;
+    }
+
+    .section h3 {
+      margin-top: 20px;
+      color: #003f7d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #003f7d;
+      color: white;
+      font-size: 12px;
+    }
+
+    footer p {
+      font-size: 11px;
+      opacity: 0.85;
+    }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .compare-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-top: 5px solid #005eb8;
+      transition: 0.2s;
+    }
+
+    .compare-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .compare-card h3 {
+      color: #005eb8;
+      margin-bottom: 10px;
+    }
+
+    .dev-banner {
+      background-color: #ffcc00;
+      color: #333;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 14px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  Flight Deck Doctor
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="conditions.html">Conditions</a>
+  <a href="medications.html">Medications</a>
+  <a href="categories.html">Medical Categories</a>
+  <a href="resources.html">Tools and Resources</a>
+  <a href="stories.html">Pilot Stories</a>
+  <a href="faq.html">FAQ</a>
+</nav>
+
+<div class="dev-banner">
+  ⚠️ This site is in early development. Content is expanding — always consult a CAME for official guidance.
+</div>
+
+<div class="container">
+
+  <h1>Medical Categories</h1>
+
+  <div class="section">
+    <h2>What is an Aviation Medical?</h2>
+    <p>
+      An aviation medical certificate is a requirement set by Transport Canada to ensure pilots and air traffic controllers are medically fit to safely perform their duties.
+    </p>
+    <p>
+      The category of medical you need depends on the type of licence you hold or are pursuing. Higher categories have stricter medical standards and more frequent renewal periods.
+    </p>
+    <p>
+      Understanding which category applies to you is the first step before booking an exam with a Civil Aviation Medical Examiner (CAME).
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Medical Categories Comparison</h2>
+
+    <div class="comparison-grid">
+
+      <div class="compare-card">
+        <h3>Category 1</h3>
+        <p><strong>Used For:</strong><br>Airline & Commercial Pilots</p>
+        <p><strong>Examples:</strong><br>ATPL, CPL, MPL, Flight Engineer</p>
+        <p><strong>Strictness:</strong><br>Highest</p>
+      </div>
+
+      <div class="compare-card">
+        <h3>Category 2</h3>
+        <p><strong>Used For:</strong><br>Air Traffic Controllers</p>
+        <p><strong>Examples:</strong><br>ATC Licence</p>
+        <p><strong>Strictness:</strong><br>High</p>
+      </div>
+
+      <div class="compare-card">
+        <h3>Category 3</h3>
+        <p><strong>Used For:</strong><br>Private Pilots</p>
+        <p><strong>Examples:</strong><br>PPL, Some Instructor Ratings</p>
+        <p><strong>Strictness:</strong><br>Moderate</p>
+      </div>
+
+      <div class="compare-card">
+        <h3>Category 4</h3>
+        <p><strong>Used For:</strong><br>Recreational Flying</p>
+        <p><strong>Examples:</strong><br>Recreational Permit, Ultralight</p>
+        <p><strong>Strictness:</strong><br>Lowest</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Which Medical Do I Need?</h2>
+    <ul>
+      <li><strong>Want to fly for airlines?</strong> → Category 1</li>
+      <li><strong>Be an Air Traffic Controller?</strong> → Category 2</li>
+      <li><strong>Fly privately?</strong> → Category 3</li>
+      <li><strong>Just recreational flying?</strong> → Category 4</li>
+    </ul>
+  </div>
+
+  <p>Select a category to learn more:</p>
+
+  <div class="category-grid">
+    <div class="category-card"><a href="#cat1">Category 1</a></div>
+    <div class="category-card"><a href="#cat2">Category 2</a></div>
+    <div class="category-card"><a href="#cat3">Category 3</a></div>
+    <div class="category-card"><a href="#cat4">Category 4</a></div>
+  </div>
+
+  <!-- CATEGORY 1 -->
+  <div id="cat1" class="section">
+    <h2>Category 1 Medical</h2>
+    <h3>Overview</h3>
+    <p>Mostly used by Airline Pilots and Commercial Pilots.</p>
+
+    <h3>What It Allows</h3>
+    <p>
+      Airline operations, commercial flying, multi-crew environments, flight engineering, Air traffic controller licenses.
+      It also covers gyroplane permits, student pilot permits for gyros and balloons, private pilot licenses (aeroplane/helicopter), balloon pilot licenses, and flight instructor ratings for gliders and ultralights.
+    </p>
+
+    <h3>Validity Period</h3>
+    <ul>
+      <li>ATPL (Under 40) - 12 Months</li>
+      <li>ATPL (Over 40) - 6 Months</li>
+      <li>Flight Engineer - 12 Months</li>
+    </ul>
+
+    <h3>Medical Requirements</h3>
+    <p>Comprehensive medical including vision, hearing, cardiovascular health.</p>
+
+    <h3>Typical Tests</h3>
+    <p>ECG (age dependent), vision testing, hearing test, general physical exam.</p>
+
+    <h3>Age Requirements</h3>
+    <p>More frequent renewals required over age 40.</p>
+
+    <h3>Costs & Validity</h3>
+    <p>Initial: ~$200–$300. Renewal frequency varies (6–12 months depending on age).</p>
+  </div>
+
+  <!-- CATEGORY 2 -->
+  <div id="cat2" class="section">
+    <h2>Category 2 Medical</h2>
+
+    <h3>Overview</h3>
+    <p>Used only by Air Traffic Controllers.</p>
+
+    <h3>What It Allows</h3>
+    <p>Ability to be an Air Traffic Controller.</p>
+
+    <h3>Validity Period</h3>
+    <ul>
+      <li>Under 40 - 24 Months</li>
+      <li>Over 40 - 12 Months</li>
+    </ul>
+
+    <h3>Medical Requirements</h3>
+    <p>Moderate level of medical screening.</p>
+
+    <h3>Typical Tests</h3>
+    <p>Vision, hearing, general physical exam.</p>
+
+    <h3>Age Requirements</h3>
+    <p>Requirements increase with age.</p>
+
+    <h3>Costs & Validity</h3>
+    <p>Typically less than Category 1.</p>
+  </div>
+
+  <!-- CATEGORY 3 -->
+  <div id="cat3" class="section">
+    <h2>Category 3 Medical</h2>
+
+    <h3>Overview</h3>
+    <p>Mostly used by Private Pilots and Recreational Pilots.</p>
+
+    <h3>What It Allows</h3>
+    <p>
+      Private flying (aeroplane/helicopter), gyroplane permits, student pilot permits (gyroplane/balloon), balloon licenses, and flight instructor ratings (glider/ultralight).
+    </p>
+
+    <h3>Validity Period</h3>
+    <ul>
+      <li>PPL (Under 40) - 24 Months</li>
+      <li>PPL (Over 40) - 12 Months</li>
+      <li>Balloon Pilot (Under 40) - 24 Months</li>
+      <li>Balloon Pilot (Over 40) - 12 Months</li>
+      <li>Ultra-Light Pilot - 60 Months</li>
+      <li>Flight Instructor (Glider/Ultralight) - 60 Months</li>
+    </ul>
+
+    <h3>Medical Requirements</h3>
+    <p>Basic medical screening.</p>
+
+    <h3>Typical Tests</h3>
+    <p>Vision, hearing, general physical exam.</p>
+
+    <h3>Age Requirements</h3>
+    <p>Renewal intervals change with age.</p>
+
+    <h3>Costs & Validity</h3>
+    <p>~$150–$200 typically.</p>
+  </div>
+
+  <!-- CATEGORY 4 -->
+  <div id="cat4" class="section">
+    <h2>Category 4 Medical</h2>
+
+    <h3>Overview</h3>
+    <p>Used by Recreational Pilot Permit holders and student pilots.</p>
+
+    <h3>What It Allows</h3>
+    <p>
+      Recreational pilot permits, student pilot permits (aeroplane/ultralight/glider/helicopter), Glider Pilot License.
+    </p>
+
+    <h3>Validity Period</h3>
+    <ul>
+      <li>Recreational Licence (Under 40) - 60 Months</li>
+      <li>Recreational Licence (Over 40) - 24 Months</li>
+      <li>Glider Pilots - 60 Months</li>
+      <li>Balloon Pilot (Under 40) - 12 Months</li>
+      <li>Balloon Pilot (Over 40) - 24 Months</li>
+    </ul>
+
+    <h3>Medical Requirements</h3>
+    <p>Self-assessment with physician involvement if needed.</p>
+
+    <h3>Typical Tests</h3>
+    <p>No formal CAME exam required in most cases.</p>
+
+    <h3>Age Requirements</h3>
+    <p>Subject to self-declaration rules.</p>
+
+    <h3>Costs & Validity</h3>
+    <p>Minimal cost.</p>
+  </div>
+
+</div>
+
+<footer>
+  <p style="max-width: 800px; margin: auto; margin-bottom: 10px;">
+    Medical information on this site is for general guidance only. Requirements may change and individual cases vary. Always consult a Transport Canada Civil Aviation Medical Examiner (CAME) for official advice.
+  </p>
+
+  © 2026 Flight Deck Doctor
+</footer>
+
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Categories - Flight Deck Doctor</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #005eb8;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    nav {
+      background-color: #003f7d;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* TOP CATEGORY SELECTOR */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .category-card {
+      background: white;
+      border: 2px solid transparent;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .category-card:hover {
+      transform: translateY(-5px);
+      border-color: #005eb8;
+    }
+
+    .category-card a {
+      text-decoration: none;
+      color: #005eb8;
+      font-weight: bold;
+    }
+
+    /* SECTION STYLING */
+    .section {
+      background: white;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .section h2 {
+      color: #005eb8;
+    }
+
+    .section h3 {
+      margin-top: 20px;
+      color: #003f7d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #003f7d;
+      color: white;
+      font-size: 12px;
+    }
+
+    footer p {
+      font-size: 11px;
+      opacity: 0.85;
+    }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .compare-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-top: 5px solid #005eb8;
+      transition: 0.2s;
+    }
+
+    .compare-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .compare-card h3 {
+      color: #005eb8;
+      margin-bottom: 10px;
+    }
+
+    .dev-banner {
+      background-color: #ffcc00;
+      color: #333;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 14px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  Flight Deck Doctor
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="conditions.html">Conditions</a>
+  <a href="medications.html">Medications</a>
+  <a href="categories.html">Medical Categories</a>
+  <a href="resources.html">Tools and Resources</a>
+  <a href="stories.html">Pilot Stories</a>
+  <a href="faq.html">FAQ</a>
+</nav>
+
+<div class="dev-banner">
+  ⚠️ This site is in early development. Content is expanding — always consult a CAME for official guidance.
+</div>
+
+<div class="container">
+
+  <h1>Medical Categories</h1>
+
+  <div class="section">
+    <h2>What is an Aviation Medical?</h2>
+    <p>
+      An aviation medical certificate is a requirement set by Transport Canada to ensure pilots and air traffic controllers are medically fit to safely perform their duties.
+    </p>
+    <p>
+      The category of medical you need depends on the type of licence you hold or are pursuing. Higher categories have stricter medical standards and more frequent renewal periods.
+    </p>
+    <p>
+      Understanding which category applies to you is the first step before booking an exam with a Civil Aviation Medical Examiner (CAME).
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Medical Categories Comparison</h2>
+
+    <div class="comparison-grid">
+
+      <div class="compare-card">
+        <h3>Category 1</h3>
+        <p><strong>Used For:</strong><br>Airline & Commercial Pilots</p>
+        <p><strong>Examples:</strong><br>ATPL, CPL, MPL, Flight Engineer</p>
+        <p><strong>Strictness:</strong><br>Highest</p>
+      </div>
+
+      <div class="compare-card">
+        <h3>Category 2</h3>
+        <p><strong>Used For:</strong><br>Air Traffic Controllers</p>
+        <p><strong>Examples:</strong><br>ATC Licence</p>
+        <p><strong>Strictness:</strong><br>High</p>
+      </div>
+
+      <div class="compare-card">
+        <h3>Category 3</h3>
+        <p><strong>Used For:</strong><br>Private Pilots</p>
+        <p><strong>Examples:</strong><br>PPL, Some Instructor Ratings</p>
+        <p><strong>Strictness:</strong><br>Moderate</p>
+      </div>
+
+      <div class="compare-card">
+        <h3>Category 4</h3>
+        <p><strong>Used For:</strong><br>Recreational Flying</p>
+        <p><strong>Examples:</strong><br>Recreational Permit, Ultralight</p>
+        <p><strong>Strictness:</strong><br>Lowest</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Which Medical Do I Need?</h2>
+    <ul>
+      <li><strong>Want to fly for airlines?</strong> → Category 1</li>
+      <li><strong>Be an Air Traffic Controller?</strong> → Category 2</li>
+      <li><strong>Fly privately?</strong> → Category 3</li>
+      <li><strong>Just recreational flying?</strong> → Category 4</li>
+    </ul>
+  </div>
+
+  <p>Select a category to learn more:</p>
+
+  <div class="category-grid">
+    <div class="category-card"><a href="#cat1">Category 1</a></div>
+    <div class="category-card"><a href="#cat2">Category 2</a></div>
+    <div class="category-card"><a href="#cat3">Category 3</a></div>
+    <div class="category-card"><a href="#cat4">Category 4</a></div>
+  </div>
+
+  <!-- CATEGORY 1 -->
+  <div id="cat1" class="section">
+    <h2>Category 1 Medical</h2>
+    <h3>Overview</h3>
+    <p>Mostly used by Airline Pilots and Commercial Pilots.</p>
+
+    <h3>What It Allows</h3>
+    <p>
+      Airline operations, commercial flying, multi-crew environments, flight engineering, Air traffic controller licenses.
+      It also covers gyroplane permits, student pilot permits for gyros and balloons, private pilot licenses (aeroplane/helicopter), balloon pilot licenses, and flight instructor ratings for gliders and ultralights.
+    </p>
+
+    <h3>Validity Period</h3>
+    <ul>
+      <li>ATPL (Under 40) - 12 Months</li>
+      <li>ATPL (Over 40) - 6 Months</li>
+      <li>Flight Engineer - 12 Months</li>
+    </ul>
+
+    <h3>Medical Requirements</h3>
+    <p>Comprehensive medical including vision, hearing, cardiovascular health.</p>
+
+    <h3>Typical Tests</h3>
+    <p>ECG (age dependent), vision testing, hearing test, general physical exam.</p>
+
+    <h3>Age Requirements</h3>
+    <p>More frequent renewals required over age 40.</p>
+
+    <h3>Costs & Validity</h3>
+    <p>Initial: ~$200–$300. Renewal frequency varies (6–12 months depending on age).</p>
+  </div>
+
+  <!-- CATEGORY 2 -->
+  <div id="cat2" class="section">
+    <h2>Category 2 Medical</h2>
+
+    <h3>Overview</h3>
+    <p>Used only by Air Traffic Controllers.</p>
+
+    <h3>What It Allows</h3>
+    <p>Ability to be an Air Traffic Controller.</p>
+
+    <h3>Validity Period</h3>
+    <ul>
+      <li>Under 40 - 24 Months</li>
+      <li>Over 40 - 12 Months</li>
+    </ul>
+
+    <h3>Medical Requirements</h3>
+    <p>Moderate level of medical screening.</p>
+
+    <h3>Typical Tests</h3>
+    <p>Vision, hearing, general physical exam.</p>
+
+    <h3>Age Requirements</h3>
+    <p>Requirements increase with age.</p>
+
+    <h3>Costs & Validity</h3>
+    <p>Typically less than Category 1.</p>
+  </div>
+
+  <!-- CATEGORY 3 -->
+  <div id="cat3" class="section">
+    <h2>Category 3 Medical</h2>
+
+    <h3>Overview</h3>
+    <p>Mostly used by Private Pilots and Recreational Pilots.</p>
+
+    <h3>What It Allows</h3>
+    <p>
+      Private flying (aeroplane/helicopter), gyroplane permits, student pilot permits (gyroplane/balloon), balloon licenses, and flight instructor ratings (glider/ultralight).
+    </p>
+
+    <h3>Validity Period</h3>
+    <ul>
+      <li>PPL (Under 40) - 24 Months</li>
+      <li>PPL (Over 40) - 12 Months</li>
+      <li>Balloon Pilot (Under 40) - 24 Months</li>
+      <li>Balloon Pilot (Over 40) - 12 Months</li>
+      <li>Ultra-Light Pilot - 60 Months</li>
+      <li>Flight Instructor (Glider/Ultralight) - 60 Months</li>
+    </ul>
+
+    <h3>Medical Requirements</h3>
+    <p>Basic medical screening.</p>
+
+    <h3>Typical Tests</h3>
+    <p>Vision, hearing, general physical exam.</p>
+
+    <h3>Age Requirements</h3>
+    <p>Renewal intervals change with age.</p>
+
+    <h3>Costs & Validity</h3>
+    <p>~$150–$200 typically.</p>
+  </div>
+
+  <!-- CATEGORY 4 -->
+  <div id="cat4" class="section">
+    <h2>Category 4 Medical</h2>
+
+    <h3>Overview</h3>
+    <p>Used by Recreational Pilot Permit holders and student pilots.</p>
+
+    <h3>What It Allows</h3>
+    <p>
+      Recreational pilot permits, student pilot permits (aeroplane/ultralight/glider/helicopter), Glider Pilot License.
+    </p>
+
+    <h3>Validity Period</h3>
+    <ul>
+      <li>Recreational Licence (Under 40) - 60 Months</li>
+      <li>Recreational Licence (Over 40) - 24 Months</li>
+      <li>Glider Pilots - 60 Months</li>
+      <li>Balloon Pilot (Under 40) - 12 Months</li>
+      <li>Balloon Pilot (Over 40) - 24 Months</li>
+    </ul>
+
+    <h3>Medical Requirements</h3>
+    <p>Self-assessment with physician involvement if needed.</p>
+
+    <h3>Typical Tests</h3>
+    <p>No formal CAME exam required in most cases.</p>
+
+    <h3>Age Requirements</h3>
+    <p>Subject to self-declaration rules.</p>
+
+    <h3>Costs & Validity</h3>
+    <p>Minimal cost.</p>
+  </div>
+
+</div>
+
+<footer>
+  <p style="max-width: 800px; margin: auto; margin-bottom: 10px;">
+    Medical information on this site is for general guidance only. Requirements may change and individual cases vary. Always consult a Transport Canada Civil Aviation Medical Examiner (CAME) for official advice.
+  </p>
+
+  © 2026 Flight Deck Doctor
+</footer>
+
+</body>
+>>>>>>> 29305a89f9a4d3117d62cd4c3ff1d6ef781656e2
+</html>
