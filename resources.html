@@ -93,12 +93,50 @@
       top: 0;
       z-index: 1000;
     }
+
+    .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.logo {
+  height: 45px;
+  width: auto;
+  border-radius: 8px; /* softens boxy feel */
+  background-color: white; /* helps logo pop */
+  padding: 4px; /* gives breathing room */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15)
+}
+
+.brand-text {
+  text-align: left;
+  color: white;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
   </style>
 </head>
 <body>
 
 <header>
-  Flight Deck Doctor
+  <div class="logo-container">
+    <img src="images\Logo.png" alt="Flight Deck Doctor Logo" class="logo">
+    <div class="brand-text">
+      <div class="title">Flight Deck Doctor</div>
+      <div class="subtitle">Aviation Medical Guidance for Pilots</div>
+    </div>
+  </div>
 </header>
 
 <nav>

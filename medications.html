@@ -7,28 +7,169 @@
   <meta name="description" content="Flight Deck Doctor: Guidance on medications for pilots, including high- and low-risk medications, evaluation considerations, and Transport Canada recommendations.">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background-color: #f5f7fa; color: #333; }
-    header { background-color: #005eb8; color: white; padding: 20px; text-align: center; font-size: 24px; }
-    nav { background-color: #003f7d; padding: 10px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    .container { max-width: 900px; margin: auto; padding: 20px; }
-    .section { background: white; padding: 25px; margin-bottom: 30px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    .section h2 { color: #005eb8; }
-    .section h3 { margin-top: 20px; color: #003f7d; }
-    .section p { line-height: 1.6; }
-    .card { background-color: white; border-radius: 10px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-top: 10px; }
-    #medSearch { padding: 10px; width: 60%; max-width: 400px; border: 1px solid #ccc; border-radius: 5px; margin-top: 10px; }
-    .dev-banner { background-color: #ffcc00; color: #333; text-align: center; padding: 10px; font-weight: bold; font-size: 14px; position: sticky; top: 0; z-index: 1000; }
-    footer { text-align: center; padding: 20px; background-color: #003f7d; color: white; font-size: 12px; }
-    footer p { font-size: 11px; opacity: 0.85; max-width: 800px; margin: auto; margin-bottom: 10px; }
-    @media (max-width: 500px) { nav a { display: block; margin: 8px 0; } #medSearch { width: 90%; } header { font-size: 20px; } }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f7fa;
+    color: #333;
+  }
+
+  header {
+    background-color: #005eb8;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+ nav {
+    background-color: #003f7d;
+    padding: 10px;
+    text-align: center;
+  }
+
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .section h2 {
+    color: #005eb8;
+  }
+
+  .section h3 {
+    margin-top: 20px;
+    color: #003f7d;
+  }
+
+  .section p {
+    line-height: 1.6;
+  }
+
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 10px;
+  }
+
+  #medSearch {
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .dev-banner {
+    background-color: #ffcc00;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003f7d;
+    color: white;
+    font-size: 12px;
+  }
+
+  footer p {
+    font-size: 11px;
+    opacity: 0.85;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  /* Logo/Header */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .logo {
+    height: 45px;
+    width: auto;
+    border-radius: 8px;
+    background-color: white;
+    padding: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+
+  .brand-text {
+    text-align: left;
+    color: white;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    opacity: 0.9;
+  }
+
+  /* Mobile */
+  @media (max-width: 500px) {
+    nav a {
+      display: block;
+      margin: 8px 0;
+    }
+
+    #medSearch {
+      width: 90%;
+    }
+
+    header {
+      font-size: 20px;
+    }
+  }
+
   </style>
+
 </head>
+
 <body>
 
 <header>
-  <div style="font-weight: bold;">Flight Deck Doctor</div>
-  <div style="font-size: 14px; opacity: 0.9;">Aviation Medical Guidance for Pilots</div>
+  <div class="logo-container">
+    <img src="images\Logo.png" alt="Flight Deck Doctor Logo" class="logo">
+    <div class="brand-text">
+      <div class="title">Flight Deck Doctor</div>
+      <div class="subtitle">Aviation Medical Guidance for Pilots</div>
+    </div>
+  </div>
 </header>
 
 <nav>
@@ -116,27 +257,41 @@ const medications = [
   { name: "zolpidem", display: "Zolpidem (Ambien)", risk: "High", guidance: "Sedative. Strict limitations and grounding required." },
   { name: "codeine", display: "Codeine", risk: "High", guidance: "Opioid. Not compatible with flying." },
   { name: "insulin", display: "Insulin", risk: "High", guidance: "Requires special medical certification and strict monitoring." },
-  { name: "salbutamol", display: "Salbutamol (Ventolin)", risk: "Low", guidance: "Acceptable if asthma is well controlled." }
+  { name: "salbutamol", display: "Salbutamol (Ventolin)", risk: "Low", guidance: "Acceptable if asthma is well controlled." },
+  { name: "melatonin", display: "Melatonin", risk: "Low–Moderate", guidance: "Transport Canada does not specifically prohibit melatonin use by flight crew, but pilots should ensure that any supplement does not impair their performance. Melatonin can cause drowsiness, so it should only be taken during designated rest periods and never within the duty period." }
 ];
 
 function searchMed() {
   const input = document.getElementById("medSearch").value.toLowerCase();
   const resultDiv = document.getElementById("result");
-  if (!input) { resultDiv.innerHTML = ""; return; }
-  const match = medications.find(med => med.name.includes(input) || med.display.toLowerCase().includes(input));
-  if (match) {
-    resultDiv.innerHTML = `<div class="card">
-      <h3>${match.display}</h3>
-      <p><strong>Risk Level:</strong> ${match.risk}</p>
-      <p><strong>Guidance:</strong> ${match.guidance}</p>
-    </div>`;
+
+  if (!input) {
+    resultDiv.innerHTML = "";
+    return;
+  }
+
+  const matches = medications.filter(med =>
+    med.name.includes(input) || med.display.toLowerCase().includes(input)
+  );
+
+  if (matches.length > 0) {
+    resultDiv.innerHTML = matches.map(match => `
+      <div class="card">
+        <h3>${match.display}</h3>
+        <p><strong>Risk Level:</strong> ${match.risk}</p>
+        <p><strong>Guidance:</strong> ${match.guidance}</p>
+      </div>
+    `).join("");
   } else {
-    resultDiv.innerHTML = `<div class="card">
-      <h3>No exact match found</h3>
-      <p>Consult a CAME. When in doubt, do not fly.</p>
-    </div>`;
+    resultDiv.innerHTML = `
+      <div class="card">
+        <h3>No matches found</h3>
+        <p>Consult a CAME. When in doubt, do not fly.</p>
+      </div>
+    `;
   }
 }
+
 </script>
 
 <footer>
